@@ -20,28 +20,28 @@ const CreateProductForm = () => {
   const handleSubmit = async (event) => {
     event.preventDefault(); // Prevent default form submission
 
-    try {
-      // Make a POST request to the API
-      const response = await fetch("http://localhost:3000/api/product", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData), // Send form data as JSON
-      });
+    // try {
+    //   // Make a POST request to the API
+    //   const response = await fetch("http://localhost:3000/api/product", {
+    //     method: "POST",
+    //     headers: {
+    //       "Content-Type": "application/json",
+    //     },
+    //     body: JSON.stringify(formData), // Send form data as JSON
+    //   });
 
-      if (response.ok) {
-        const result = await response.json();
-        setResponseMessage("Product Added successfully!");
-        console.log("Response:", result);
-        alert("Data Added successfully")
-      } else {
-        setResponseMessage("Error creating note. Please try again.");
-      }
-    } catch (error) {
-      console.error("Error:", error);
-      setResponseMessage("An error occurred. Please try again.");
-    }
+    //   if (response.ok) {
+    //     const result = await response.json();
+    //     setResponseMessage("Product Added successfully!");
+    //     console.log("Response:", result);
+    //     alert("Data Added successfully")
+    //   } else {
+    //     setResponseMessage("Error creating note. Please try again.");
+    //   }
+    // } catch (error) {
+    //   console.error("Error:", error);
+    //   setResponseMessage("An error occurred. Please try again.");
+    // }
   };
   return (
     <div>

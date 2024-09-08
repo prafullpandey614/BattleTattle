@@ -28,8 +28,8 @@ const Dummydata = [
 
 const  GET = async(req)=>{
     await connectDB();
-    const response = await Product.find();
+    // const response = await Product.find();
     // console.log("Server Side Console : ",Dummydata)
-    return NextResponse.json({"message" : response},{status:200})
+    return NextResponse.json({"message" : Dummydata},{status:200})
 }
 export { GET };
