@@ -7,22 +7,22 @@ const MainContent = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true); // Loading state
   console.log("Iamge Path : ",community_img)
-  useEffect(() => {
-    const fetchProducts = async () => {
-      console.log("i fire once");
-      try {
-        const result = await fetch("http://localhost:3000/api/dummy");
-        const response = await result.json(); // Correct this line
-        setData(response.message);
-      } catch (error) {
-        console.error("Error fetching data:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  // useEffect(() => {
+  //   // const fetchProducts = async () => {
+  //   //   console.log("i fire once");
+  //   //   try {
+  //   //     const result = await fetch("http://localhost:3000/api/dummy");
+  //   //     const response = await result.json(); // Correct this line
+  //   //     setData(response.message);
+  //   //   } catch (error) {
+  //   //     console.error("Error fetching data:", error);
+  //   //   } finally {
+  //   //     setLoading(false);
+  //   //   }
+  //   };
 
-    fetchProducts();
-  }, []);
+  //   fetchProducts();
+  // }, []);
   console.log(data);
   return (
     <div className={styles.main}>
