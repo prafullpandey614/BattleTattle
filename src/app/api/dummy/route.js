@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server"
-import connectDB from "@/lib/connectDB"
-import Product from "@/models/Product"
-import mongoose from "mongoose"
+// import connectDB from "@/lib/connectDB"
+// import Product from "@/models/Product"
+// import mongoose from "mongoose"
 
 const Dummydata = [
     {
@@ -27,7 +27,7 @@ const Dummydata = [
 ]
 
 const  GET = async(req)=>{
-    await connectDB();
+    // await connectDB();
     // const response = await Product.find();
     // console.log("Server Side Console : ",Dummydata)
     return NextResponse.json({"message" : Dummydata},{status:200})
