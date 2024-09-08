@@ -1,0 +1,99 @@
+@keyframes trasit {
+   0%{
+     right: -100%;
+   }
+   50%{
+     right: 100%;
+   }
+   
+   100%{
+     right : 0%
+   }
+
+}
+
+.title {
+  text-align: center;
+  padding: 4rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  /* padding: 1rem 2rem; */
+  /* background-color: black; */
+}
+.productGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 100%;
+}
+.main {
+  margin-top: 3.6vh;
+  display: flex;
+}
+.left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: crimson; */
+}
+.left p {
+  font-size: 1.5vmax;
+}
+.left button {
+  background-color: #00e35e;
+  padding: 0.8vmax 1.3vmax;
+  border-radius: 4px;
+  font-size: 1.3vmax;
+}
+.left h1 {
+  /* color: white; */
+  padding: 1rem;
+  font-size: 5vmax;
+}
+.right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  position: relative;
+  top: 0;
+  /* left: -100%; Start the shine from the left off-screen */
+  /* width: 100%; */
+  /* height: 100%; */
+  /* animation: transit  2s infinite; */
+}
+.right img {
+  width: 100%;
+  position: absolute;
+  animation: trasit 5s;
+  animation-timing-function: ease-in-out;
+}
+
+@media (max-width: 600px) {
+
+  .main {
+    flex-direction: column;
+  }
+  .left {
+    margin-top: 0;
+    padding-top: 0;
+    width: 100vw;
+    height: 30vh;
+    
+  }
+  .right {
+    width: 100vw;
+  }
+  .right img{
+    top: 80%;
+  }
+ 
+}

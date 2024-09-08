@@ -1,0 +1,107 @@
+
+@keyframes animatelogo {
+    0% {
+        display: none;
+    }
+    25%{
+        transform: rotateX(90deg) rotateY(0deg) rotate(0deg);
+    }
+    50%{
+        transform: rotateX(150deg) rotateY(150deg) rotate(0deg);
+    }
+    75%{
+        transform: rotateX(150deg) rotateY(150deg) rotate(150deg);
+    }
+    100%{
+        transform: rotateX(0deg) rotateY(0deg) rotate(0deg);
+    }
+  }
+
+.nav {
+    text-decoration: none;
+    display: flex;
+    justify-content : space-between ;
+    /* padding-right: 1rem; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    /* background-color: rgba(178, 32, 149, 0.915); */
+    background-color: black;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000000;
+    color: white;
+    
+}
+.signin{
+    background-color: #00E35E;
+    padding: 0.4vmax 1vmax ;
+    border-radius: 4px;
+    font-size: 1.3vmax;
+}
+.menuicon{
+    display: none;
+}
+.menu_box{
+    display: none;
+
+}
+.logo{
+    margin: 0.5rem 1rem;
+    border-radius: 50%;
+    padding: 0.1rem 1rem;
+    padding-left: 2rem;
+    font-size: 3vmax;
+    position: relative;
+    animation: animatelogo 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    
+}
+.logo p{
+    font-size: 1vmax;
+}
+.no_underline {
+    text-decoration: none;
+    color: inherit; 
+  }
+.link{
+    padding: 0rem 0.5rem;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
+    line-height: 1px;
+
+}
+.link h4{
+    font-size: 1.4vmax;
+    /* padding: 2rem; */
+}
+@media only screen and (max-width: 600px) {
+    .nav {
+      /* background-color: #00E35E; */
+    }
+    .link{
+        display: none;
+    }
+    .menuicon{
+        display: block;
+    }
+    .menu_box{
+        display: block;
+        width: 100vw;
+        text-align: center;
+        margin-top: 90px;
+    }
+    .menu_box h4{
+        border: 1px solid grey;
+        margin: 1px;
+    }
+    .signin{
+        margin-top: 1rem;
+        font-size: 2vmax;
+        font-weight: 700;
+    }
+  }

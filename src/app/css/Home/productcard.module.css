@@ -1,0 +1,42 @@
+.img {
+  /* Set the desired height */
+  width: 100%;
+  height: 8rem;
+  overflow: hidden; /* Hide any overflow */
+  position: relative; /* Position relative for absolute children */
+  background-color: black;
+}
+
+.img img {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover; /* Cover the entire container while maintaining aspect ratio */
+  display: block; /* Removes the bottom gap caused by inline images */
+}
+
+.text {
+  background-color: rgba(200, 243, 190, 0.813);
+  text-align: left;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card {
+  /* height: 10rem; */
+  width: 60%;
+  /* background-color:  rgba(200, 243, 190, 0.813); */
+  margin: 2px;
+  margin: auto;
+  border: 2px solid grey;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.prod_btn{
+  background-color: rebeccapurple;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.6rem;
+  border : 2px solid red;
+}

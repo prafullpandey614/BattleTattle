@@ -1,0 +1,33 @@
+.main{
+    margin-top: 20vh;
+    width: 100%;
+}
+.title{
+    font-size: 4vmax;
+    width: 60%;
+    margin: auto;
+
+}
+.para{
+    width: 60vw;
+    margin: auto;
+    font-size: 2vmax;
+}
+@media (max-width:600px) {
+    .para{
+        width: 80%;
+        margin: auto;
+        font-size: 2vmax;
+    }
+    .main{
+        margin-top: 13vh;
+        width: 100%;
+    }
+    .title{
+        font-size: 3.5vmax;
+        width: 80%;
+        margin-bottom: 1rem;
+        /* margin: auto; */
+    
+    }
+}

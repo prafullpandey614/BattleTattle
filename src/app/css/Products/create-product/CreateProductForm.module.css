@@ -1,0 +1,30 @@
+.main{
+    margin: 60px;
+    
+}
+.main h1{
+    text-align: center;
+}
+.form_container{
+    /* border: 2px solid black; */
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+}
+.form_container form{
+    margin-top: 4rem;
+    width: 50%;
+    margin: auto;
+    padding: 4rem;
+    background-color: pink;
+    border-radius: 1rem;
+}
+
+.label{
+    font-size: 1rem;
+
+}
+.input{
+    padding: 0.4rem 0.4rem;
+    border-radius: 4px;
+}

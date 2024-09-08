@@ -1,0 +1,39 @@
+@keyframes typing {
+    from {
+      width: 0; /* Start with no text visible */
+    }
+    to {
+      width: 100%; /* Show the full width of the text */
+    }
+  }
+  
+  /* Blinking cursor keyframes */
+  @keyframes blink {
+    from, to {
+      border-color: transparent; /* Make the cursor transparent */
+    }
+    50% {
+      border-color: black; /* Show the cursor */
+    }
+  }
+
+.main{
+    width: 100%;
+    position: relative;
+    margin-top: 10vmax;
+    /* animation: typing 5s steps(40, end), blink 0.7s step-end infinite; */
+
+}
+.main h1{
+    text-align: center;
+    font-size: 4vmax;
+}
+.main p{
+    width: 75%;
+    margin: auto;
+    margin-top: 2vmax;
+    font-size: 2vmax;
+}
+.pcont{
+    animation: typing 5s , blink 0.7s step-end infinite;
+}
